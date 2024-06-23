@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffc0cb; /* Background color matching the pink in your image */
+    margin: 0;
+}
+
+.emoji-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+}
+
+.emoji {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.text-box {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; /* Custom font from Google Fonts */
+    max-width: 600px; /* Adjust max-width to match the width of the emoji grid */
+    word-wrap: break-word; /* Ensure long words break and don't overflow */
+}
+
+.text-box p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.text-box .close-button {
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+}
