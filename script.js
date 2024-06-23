@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (event.target.textContent === '🚀') {
                 emojis.forEach(e => e.style.opacity = '0.25');
                 typewriterText.innerHTML = '';
-                textBox.style.display = 'block';
+                textBox.style.display = 'flex'; // Use flex to center content
                 index = 0;
                 closeButton.style.display = 'none'; // Hide close button before typing starts
                 typeWriter();
@@ -42,4 +42,3 @@ document.addEventListener('DOMContentLoaded', () => {
         emojis.forEach(e => e.style.opacity = '1');
     });
 });
-
