@@ -6,7 +6,6 @@
     <title>Personal Website</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" integrity="sha384-4qqNAAwBqJoTf3wN1Wm1fDl0yYxueFELN0nuIZp0JJh9nWbW61RwxvdRbZ2MEx3N" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="emoji-grid">
@@ -26,8 +25,11 @@
         <span class="emoji">🍄</span>
         <span class="emoji">🔗</span>
     </div>
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" integrity="sha384-4qqNAAwBqJoTf3wN1Wm1fDl0yYxueFELN0nuIZp0JJh9nWbW61RwxvdRbZ2MEx3N" crossorigin="anonymous"></script>
     <script>
-        twemoji.parse(document.body);
+        document.addEventListener('DOMContentLoaded', () => {
+            twemoji.parse(document.body);
+        });
     </script>
     <script src="script.js"></script>
 </body>
